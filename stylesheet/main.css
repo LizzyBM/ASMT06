@@ -1,0 +1,28 @@
+.hello{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    /*grid-auto-rows: 100px;*/
+    grid-auto-rows: minmax(100px, auto);
+}
+.hello > div{
+    background: #eee;
+    padding: 1em;
+  }
+.hello > div:nth-child(odd){
+    background: #d4a295;
+  }
+  body{
+    background-color: rgb(71, 36, 36);
+  }
+  h1{
+    text-align: center;
+    color: #d4a295;
+    border-color: #d4a295;
+    border-width: 0.5rem;
+    border-style: double;
+    padding: 14px;
+  }
+  *{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
